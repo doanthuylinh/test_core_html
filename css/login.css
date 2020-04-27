@@ -1,0 +1,18 @@
+fieldset{
+    width: 350px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+label{
+    float: left;
+    width: 110px;
+}
+input{
+    margin-bottom: 10px;
+}
+.img{
+    width: 100px;
+}
+.center{
+    text-align: center;
+}
