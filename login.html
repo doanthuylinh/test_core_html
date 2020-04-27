@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="checklogin.js"></script>
 </head>
+
 <body>
     <fieldset>
         <form action="manage.html">
@@ -14,13 +17,12 @@
                 <img src="image/logo-trai-cay.jpg" class="img">
             </div>
             <label>User Name</label>
-            <input type="text" placeholder="Enter user name" required id="name"> <br>
+            <input type="text" placeholder="Enter user name" required id="username"> <br>
             <label>Password</label>
             <input type="text" placeholder="Enter password" required id="password"> <br>
-            <a href="" target="_blank" title="Trang quản lý" class="center">
-                <input type="submit" class="btn" value="Login" >
-            </a>   
+            <input type="button" value="Login" onclick="checkLogin()">
         </form>
     </fieldset>
 </body>
+
 </html>

@@ -1,56 +1,59 @@
-body {
-    margin: 0;
-}
-
-#wrapper {
-    overflow-x: hidden;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-table {
-    border-collapse: collapse;
-    border-color: black;
-    margin: auto;
-    display: block;
-    position: absolute;
-    margin-top: 50px;
-}
-
-thead {
-    background-color: aquamarine;
-}
-
-th,
-td {
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tbody>tr:hover {
-    background-color: aquamarine;
-}
-
-tbody {
-    overflow-y: auto;
-    height: 420px;
-    display: block;
-}
-
-
-/* Popup container */
-.popup {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100vw;
-    background: #cccccc7a;
-    height: 100vh;
-  }
+            body {
+                margin: 0;
+            }
+            
+            #wrapper {
+                overflow-x: hidden;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-color: black;
+                margin: auto;
+                display: block;
+                position: absolute;
+                margin-top: 50px;
+            }
+            
+            thead {
+                background-color: aquamarine;
+            }
+            
+            th,
+            td {
+                width: 100px;
+                height: 40px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            
+            tbody>tr:hover {
+                background-color: aquamarine;
+            }
+            
+            tbody {
+                overflow-y: auto;
+                height: 420px;
+                display: block;
+            }
+            /* Popup container */
+            /*    .popup {
+                position: fixed;
+                top: 0;
+                z-index: 1000;
+                width: 100vw;
+                background: #cccccc7a;
+                height: 100vh;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            */
