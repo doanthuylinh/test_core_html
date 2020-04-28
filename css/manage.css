@@ -43,17 +43,21 @@
                 height: 420px;
                 display: block;
             }
-            /* Popup container */
-            /*    .popup {
+            
+            .modal-container {
                 position: fixed;
                 top: 0;
-                z-index: 1000;
-                width: 100vw;
-                background: #cccccc7a;
-                height: 100vh;
-                position: relative;
-                display: inline-block;
-                cursor: pointer;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #7b797959;
+                display: none;
             }
             
-            */
+            .modal-dialog {
+                background: #fff;
+                width: 60%;
+                margin: auto;
+                margin-top: 50px;
+                padding: 10px;
+            }
