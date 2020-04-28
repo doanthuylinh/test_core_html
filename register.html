@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+
+</head>
+
+<body>
+    <fieldset>
+        <form>
+            <legend class="center"><b>REGISTRATION FORM</b></legend>
+            <table class="bt-w__100">
+                <tr>
+                    <td>First name</td>
+                    <td><input type="text" placeholder="Enter first name" id="firstname"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="bt__error" id="firstname_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td><input type="text" placeholder="Enter last name" id="lastname"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="bt__error" id="lastname_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Enter email" id="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="bt__error" id="email_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="number" placeholder="Enter phone number" id="phone"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="bt__error" id="phone_error"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter password" id="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="bt__error" id="password_error"></p>
+                    </td>
+                </tr>
+            </table>
+            <input type="button" value="Register" onclick="checkRegister()" id="register_button">
+    </fieldset>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>
