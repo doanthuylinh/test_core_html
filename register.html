@@ -15,7 +15,7 @@
             <legend class="center"><b>REGISTRATION FORM</b></legend>
             <table class="bt-w__100">
                 <tr>
-                    <td>First name</td>
+                    <td class="label">First name</td>
                     <td><input type="text" placeholder="Enter first name" id="firstname"></td>
                 </tr>
                 <tr>
@@ -25,7 +25,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Last name</td>
+                    <td class="label">Last name</td>
                     <td><input type="text" placeholder="Enter last name" id="lastname"></td>
                 </tr>
                 <tr>
@@ -35,7 +35,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Email</td>
+                    <td class="label">Email</td>
                     <td><input type="email" placeholder="Enter email" id="email"></td>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Phone</td>
+                    <td class="label">Phone</td>
                     <td><input type="number" placeholder="Enter phone number" id="phone"></td>
                 </tr>
                 <tr>
@@ -55,7 +55,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Password</td>
+                    <td class="label">Password</td>
                     <td><input type="password" placeholder="Enter password" id="password"></td>
                 </tr>
                 <tr>
@@ -65,7 +65,9 @@
                     </td>
                 </tr>
             </table>
-            <input type="button" value="Register" onclick="checkRegister()" id="register_button">
+            <div class="center">
+                <input type="button" value="Register" onclick="checkRegister()" id="register_button" class="btn">
+            </div>
     </fieldset>
 
     <script src="js/register.js"></script>

@@ -1,22 +1,38 @@
 fieldset {
     width: 350px;
-    background-color: antiquewhite;
+    background-color: white;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
 }
 
 legend {
-    margin-bottom: 10px;
+    padding: 10px;
+}
+
+legend>b {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+div {
+    padding: 15px;
 }
 
 label {
     float: left;
     width: 110px;
+    color: #7FD323;
+    font-weight: bold;
+    padding: 10px;
 }
 
 input {
     margin-bottom: 10px;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #959595;
 }
 
 .img {
@@ -25,4 +41,12 @@ input {
 
 .center {
     text-align: center;
+}
+
+.btn {
+    margin: 10px 5px;
+    color: white;
+    background-color: #7FD323;
+    border-radius: 5px;
+    border: 1px solid #959595;
 }

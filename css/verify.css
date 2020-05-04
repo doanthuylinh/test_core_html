@@ -1,8 +1,9 @@
 .cover {
     margin: auto;
-    height: 200px;
+    margin-top: 100px;
     width: 50%;
-    background-color: antiquewhite;
+    background-color: white;
+    border: 2px solid #959595;
 }
 
 .box_verify {
@@ -10,6 +11,7 @@
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .inner_box {
@@ -18,14 +20,20 @@
     margin-top: 50px;
 }
 
+.btn {
+    margin: 10px 5px;
+    color: white;
+    background-color: #7FD323;
+    border-radius: 5px;
+    border: 1px solid #959595;
+    padding: 10px;
+}
+
 input {
     width: 10%;
     height: 30px;
     text-align: center;
-}
-
-button {
-    background-color: burlywood;
-    height: 30px;
-    border: 0;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #959595;
 }

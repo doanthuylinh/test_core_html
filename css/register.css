@@ -1,18 +1,27 @@
 fieldset {
     width: 350px;
-    background-color: antiquewhite;
+    background-color: white;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
 }
 
 legend {
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
-label {
+legend>b {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.label {
     float: left;
     width: 110px;
+    color: #7FD323;
+    font-weight: bold;
+    padding: 10px;
 }
 
 p {
@@ -20,7 +29,10 @@ p {
 }
 
 input {
-    width: 100%;
+    margin-bottom: 5px;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border: 1px solid #959595;
 }
 
 #register_button {
@@ -38,4 +50,12 @@ input {
 .bt__error {
     color: #ff3333;
     display: none;
+}
+
+.btn {
+    margin: 10px 5px;
+    color: white;
+    background-color: #7FD323;
+    border-radius: 5px;
+    border: 1px solid #959595;
 }
