@@ -55,6 +55,7 @@ function addDataToBody() {
         }
         tbody.appendChild(tr);
     }
+
 }
 
 function showData(param) {

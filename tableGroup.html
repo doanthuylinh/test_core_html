@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/tableGroup.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="tableFixHead">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>id</th>
+                            <th>Trạng thái</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>amount</th>
+                            <th>transaction_fee</th>
+                            <th>note</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_data_id" onscroll="onLoadMore(event)"></tbody>
+                </table>
+            </div>
+            <script src="js/tableGroup.js"></script>
+        </body>
+    </html>
