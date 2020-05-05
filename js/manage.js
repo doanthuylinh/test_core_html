@@ -25,31 +25,36 @@ var data = [{
     "status": "abc"
 }]
 
-var result = [];
-var obj = {};
-for (let index = 0; index < 100; index++) {
-    obj = {};
-    obj.id = index + 1;
-    obj = Object.assign(obj, data[Math.floor(Math.random() * Math.floor(data.length))]);
-    result.push(obj);
-}
-var tbody = document.getElementById('table_data_id');
-var tr;
-var td;
-for (const ele of result) {
-    tr = document.createElement('tr');
-    var arrObject = Object.keys(ele);
-    for (const key of arrObject) {
-        td = document.createElement('td');
-        td.innerText = ele[key];
-        tr.appendChild(td);
-        if (key === 'id') {
-            td.addEventListener('click', function() {
-                showData(ele)
-            })
-        }
+count = 0;
+
+function addDataToBody() {
+    var result = [];
+    var obj = {};
+    for (let index = 0; index < 20; index++) {
+        obj = {};
+        obj.id = count + 1;
+        obj = Object.assign(obj, data[Math.floor(Math.random() * Math.floor(data.length))]);
+        result.push(obj);
+        count++;
     }
-    tbody.appendChild(tr);
+    var tbody = document.getElementById('table_data_id');
+    var tr;
+    var td;
+    for (const ele of result) {
+        tr = document.createElement('tr');
+        var arrObject = Object.keys(ele);
+        for (const key of arrObject) {
+            td = document.createElement('td');
+            td.innerText = ele[key];
+            tr.appendChild(td);
+            if (key === 'id') {
+                td.addEventListener('click', function() {
+                    showData(ele)
+                })
+            }
+        }
+        tbody.appendChild(tr);
+    }
 }
 
 function showData(param) {
@@ -60,3 +65,15 @@ function showData(param) {
 function closePopup() {
     document.getElementById('popup_data').style.display = 'none';
 }
+
+function onLoadMore(event) {
+    var target = event.srcElement;
+    if (count >= 100) {
+        return;
+    }
+    if ((target.scrollTop + target.clientHeight + 10) >= target.scrollHeight) {
+        addDataToBody();
+
+    }
+}
+addDataToBody();

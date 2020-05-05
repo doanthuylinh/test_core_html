@@ -72,3 +72,12 @@
                 margin-top: 50px;
                 padding: 10px;
             }
+            
+            .btn {
+                margin: 10px 5px;
+                color: white;
+                background-color: #7FD323;
+                border-radius: 5px;
+                border: 1px solid #959595;
+                padding: 10px;
+            }

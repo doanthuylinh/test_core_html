@@ -20,8 +20,8 @@
                     <th>Trạng thái</th>
                 </tr>
             </thead>
-            <tbody id="table_data_id">
-            </tbody>
+            <tbody id="table_data_id" onscroll="onLoadMore(event)"></tbody>
+
         </table>
     </div>
     <div class="modal-container" id="popup_data">
@@ -29,7 +29,7 @@
             <div id="show_data">
 
             </div>
-            <button onclick="closePopup()">Close</button>
+            <button onclick="closePopup()" class="btn">Close</button>
         </div>
     </div>
     <script src="js/manage.js"></script>
